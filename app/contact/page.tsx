@@ -1,6 +1,7 @@
 import React from "react";
 import { Mail, Phone, MapPin, Clock, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@heroui/button";
 
 const Contact = () => {
   return (
@@ -18,7 +19,7 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                Let's start a <br />
+                Let&apos;s start a <br />
                 <span style={{ color: "#dfd6c7" }}>conversation.</span>
               </h1>
               <p className="text-xl text-gray-600 mb-12 max-w-xl">
@@ -37,26 +38,28 @@ const Contact = () => {
                   {
                     icon: Phone,
                     title: "Phone",
-                    content: "+1 (555) 123-4567",
+                    content: "+1 1234567890",
                     link: "tel:+15551234567",
                   },
                   {
                     icon: MapPin,
                     title: "Location",
                     content: "123 Business Ave, Suite 100, New York, NY 10001",
-                    link: "#",
+                    link: "https://g.co/kgs/XNt884S",
                   },
                   {
                     icon: Clock,
                     title: "Business Hours",
                     content: "Mon - Fri: 9:00 AM - 6:00 PM",
-                    link: "#",
+                    link: "https://g.co/kgs/XNt884S",
                   },
                 ].map((item, index) => (
-                  <a
+                  <Link
                     key={index}
                     href={item.link}
                     className="p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors group"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <item.icon
                       className="w-8 h-8 mb-4"
@@ -68,7 +71,7 @@ const Contact = () => {
                     <p className="text-gray-600 text-sm group-hover:text-gray-900 transition-colors">
                       {item.content}
                     </p>
-                  </a>
+                  </Link>
                 ))}
               </div>
 
@@ -79,13 +82,13 @@ const Contact = () => {
                 <div className="flex space-x-4">
                   {["Twitter", "LinkedIn", "Facebook", "Instagram"].map(
                     (platform) => (
-                      <a
+                      <Button
                         key={platform}
-                        href="#"
+                        variant="ghost"
                         className="text-gray-600 hover:text-gray-900"
                       >
                         {platform}
-                      </a>
+                      </Button>
                     )
                   )}
                 </div>
@@ -168,7 +171,7 @@ const Contact = () => {
                   </button>
 
                   <p className="text-sm text-gray-500 text-center">
-                    We'll get back to you within 24-48 hours
+                    We&apos;ll get back to you within 24-48 hours
                   </p>
                 </div>
               </form>

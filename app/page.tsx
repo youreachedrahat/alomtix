@@ -48,8 +48,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="fade-in-right">
               <p className="text-lg text-gray-700 mb-6">
-                At Almotix, we're dedicated to transforming businesses through
-                innovative solutions and expert consulting. Our team of
+                At Almotix, we&apos;re dedicated to transforming businesses
+                through innovative solutions and expert consulting. Our team of
                 professionals brings years of experience across multiple
                 industries.
               </p>
@@ -124,7 +124,7 @@ export default function HomePage() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-gray-700 mb-8">
-            Let's work together to achieve your goals
+            Let&apos;s work together to achieve your goals
           </p>
           <Link
             href="/contact"
