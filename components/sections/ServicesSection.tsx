@@ -43,7 +43,7 @@ export const ServicesSection = () => {
     >
       <div className="p-10 md:py-32 md:px-4 bg-gray-50 rounded-t-[2rem] md:rounded-t-[5rem]">
         <div className="max-w-6xl mx-auto">
-          <div className="fade-up">
+          <div className="">
             <h2 className="text-7xl md:text-9xl font-medium mb-16 text-gray-900 relative">
               Our <br />
               <span className="font-thin italic">&nbsp; Services</span>
@@ -51,7 +51,7 @@ export const ServicesSection = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative stagger-children">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
             {services.map((service, index) => (
               <div
                 key={index}

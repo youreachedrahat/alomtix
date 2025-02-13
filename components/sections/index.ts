@@ -1,11 +1,13 @@
-import { HeroSection } from "@/components/sections/HeroSection";
-import { ServicesSection } from "@/components/sections/ServicesSection";
-import { LegalSection } from "@/components/sections/LegalSection";
-import { ThreeDSection } from "@/components/sections/ThreeDSection";
-import { SalesSection } from "@/components/sections/SalesSection";
-import { MarketingSection } from "@/components/sections/MarketingSection";
-import { BusinessConsultingSection } from "@/components/sections/BusinessConsultingSection";
-import { TestimonialSection } from "@/components/sections/TestimonialSection";
+import { HeroSection } from "./HeroSection";
+import { ServicesSection } from "./ServicesSection";
+import { LegalSection } from "./LegalSection";
+import { ThreeDSection } from "./ThreeDSection";
+import { SalesSection } from "./SalesSection";
+import { MarketingSection } from "./MarketingSection";
+import { BusinessConsultingSection } from "./BusinessConsultingSection";
+import { Testimonials } from "./testimonials";
+import { Aboutus } from "./aboutus";
+import { Contactus } from "./contactus";
 
 export {
   HeroSection,
@@ -14,6 +16,8 @@ export {
   LegalSection,
   MarketingSection,
   SalesSection,
-  TestimonialSection,
+  Testimonials,
   ThreeDSection,
+  Contactus,
+  Aboutus,
 };
