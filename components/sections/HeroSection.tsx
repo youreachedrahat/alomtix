@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const HeroSection: React.FC = () => {
+export const HeroSection: React.FC = () => {
   return (
     <section
       className="relative min-h-screen overflow-hidden"
@@ -102,5 +102,3 @@ const HeroSection: React.FC = () => {
     </section>
   );
 };
-
-export default HeroSection;

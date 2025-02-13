@@ -8,7 +8,7 @@ const testimonials = [
     content:
       "Almotix transformed our business operations completely. Their expertise in both technical and strategic aspects is unmatched.",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
   },
   {
     name: "Michael Chen",
@@ -16,7 +16,7 @@ const testimonials = [
     content:
       "The level of professionalism and innovation they bring to the table is exceptional. Best decision we made for our company.",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
   },
   {
     name: "Emily Rodriguez",
@@ -24,7 +24,7 @@ const testimonials = [
     content:
       "Their marketing strategies helped us achieve 300% growth in just six months. Incredible results!",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
   },
   {
     name: "David Kim",
@@ -32,7 +32,7 @@ const testimonials = [
     content:
       "The 3D visualization services exceeded our expectations. They truly understand modern business needs.",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
   },
   {
     name: "Lisa Thompson",
@@ -40,7 +40,7 @@ const testimonials = [
     content:
       "Outstanding legal consulting services. They make complex legal matters simple and actionable.",
     image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
   },
   {
     name: "James Wilson",
@@ -48,7 +48,7 @@ const testimonials = [
     content:
       "Our sales team performance improved dramatically after implementing their strategies.",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
   },
 ];
 

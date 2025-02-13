@@ -14,31 +14,31 @@ export const ThreeDSection = () => {
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-2">
                   <img
-                    src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&q=80"
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                     alt="3D Visualization main"
                     className="w-full h-80 object-cover rounded-2xl"
                   />
                 </div>
                 <div className="space-y-4">
                   <img
-                    src="https://images.unsplash.com/photo-1617791160588-241658c0f566?auto=format&fit=crop&q=80"
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                     alt="3D Model"
                     className="w-full h-[150px] object-cover rounded-2xl"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1617791160523-401e69c2f55e?auto=format&fit=crop&q=80"
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                     alt="3D Render"
                     className="w-full h-[150px] object-cover rounded-2xl"
                   />
                 </div>
                 <div className="col-span-3 grid grid-cols-2 gap-4 mt-4">
                   <img
-                    src="https://images.unsplash.com/photo-1617791160536-598cf32026fb?auto=format&fit=crop&q=80"
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                     alt="3D Design"
                     className="w-full h-40 object-cover rounded-2xl"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1617791160959-bb0e5cbdb1d6?auto=format&fit=crop&q=80"
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                     alt="3D Project"
                     className="w-full h-40 object-cover rounded-2xl"
                   />

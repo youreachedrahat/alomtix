@@ -14,7 +14,7 @@ export const SalesSection = () => {
               <div className="grid grid-cols-6 grid-rows-6 gap-4 h-[600px]">
                 <div className="col-span-3 row-span-6">
                   <img
-                    src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80"
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                     alt="Sales Team"
                     className="w-full h-full object-cover rounded-2xl"
                   />
@@ -29,12 +29,12 @@ export const SalesSection = () => {
                 <div className="col-span-3 row-span-3">
                   <div className="grid grid-cols-2 gap-4 h-full">
                     <img
-                      src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80"
+                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                       alt="Sales Strategy"
                       className="w-full h-full object-cover rounded-2xl"
                     />
                     <img
-                      src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80"
+                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                       alt="Business Growth"
                       className="w-full h-full object-cover rounded-2xl"
                     />

@@ -74,35 +74,35 @@ export const MarketingSection = () => {
             <div className="grid grid-cols-4 grid-rows-4 gap-4 h-[600px]">
               <div className="col-span-2 row-span-2">
                 <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Marketing Analytics"
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
               <div className="col-span-2 row-span-1">
                 <img
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Digital Marketing"
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
               <div className="col-span-1 row-span-2">
                 <img
-                  src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Marketing Strategy"
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
               <div className="col-span-1 row-span-2">
                 <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Business Growth"
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
               <div className="col-span-2 row-span-1">
                 <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Marketing Performance"
                   className="w-full h-full object-cover rounded-2xl"
                 />

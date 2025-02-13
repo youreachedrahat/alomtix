@@ -7,7 +7,7 @@ import {
   Boxes,
 } from "lucide-react";
 
-const ServicesSection = () => {
+export const ServicesSection = () => {
   const services = [
     {
       icon: Building2,
@@ -87,5 +87,3 @@ const ServicesSection = () => {
     </section>
   );
 };
-
-export default ServicesSection;

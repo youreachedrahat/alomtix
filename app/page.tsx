@@ -1,20 +1,15 @@
 "use client";
-import { Navbar } from "@/components/navbar";
-import { BusinessConsultingSection } from "@/components/sections/BusinessConsultingSection";
-import HeroSection from "@/components/sections/HeroSection";
-import { LegalSection } from "@/components/sections/LegalSection";
-import { MarketingSection } from "@/components/sections/MarketingSection";
-import { SalesSection } from "@/components/sections/SalesSection";
-import ServicesSection from "@/components/sections/ServicesSection";
-import { TestimonialSection } from "@/components/sections/TestimonialSection";
-import { ThreeDSection } from "@/components/sections/ThreeDSection";
-// import ServicesSection from "../components/ServicesSection";
-// import LegalSection from "../components/LegalSection";
-// import ThreeDSection from "../components/ThreeDSection";
-// import MarketingSection from "../components/MarketingSection";
-// import SalesSection from "../components/SalesSection";
-// import BusinessConsultingSection from "../components/BusinessConsultingSection";
-// import TestimonialSection from "../components/TestimonialSection";
+
+import {
+  BusinessConsultingSection,
+  HeroSection,
+  LegalSection,
+  MarketingSection,
+  SalesSection,
+  ServicesSection,
+  TestimonialSection,
+  ThreeDSection,
+} from "@/components/sections";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 import Link from "next/link";
 
@@ -23,16 +18,10 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* className="min-h-screen bg-white" */}
-      <Navbar />
-
-      {/* Hero Section */}
       <HeroSection />
 
-      {/* Services Overview */}
       <ServicesSection />
 
-      {/* Individual Service Sections */}
       <LegalSection />
       <ThreeDSection />
       <MarketingSection />

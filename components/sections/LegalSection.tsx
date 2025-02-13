@@ -74,24 +74,24 @@ export const LegalSection = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Legal document"
                   className="w-full h-48 object-cover rounded-2xl"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Legal office"
                   className="w-full h-64 object-cover rounded-2xl"
                 />
               </div>
               <div className="space-y-4 pt-8">
                 <img
-                  src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Legal consultation"
                   className="w-full h-64 object-cover rounded-2xl"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
                   alt="Business meeting"
                   className="w-full h-48 object-cover rounded-2xl"
                 />
