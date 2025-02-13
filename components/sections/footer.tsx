@@ -31,8 +31,9 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 text-sm text-center">
-        © {new Date().getFullYear()} Almotix. All rights reserved.
+      <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 text-9xl text-center text-gray-700">
+        ALMOTIX
+        {/* © {new Date().getFullYear()} Almotix. All rights reserved. */}
       </div>
     </footer>
   );
