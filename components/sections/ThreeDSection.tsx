@@ -3,7 +3,7 @@ import { Cuboid, Layers, Wand2, Laptop } from "lucide-react";
 
 export const ThreeDSection = () => {
   return (
-    <section className="bg-gray-900">
+    <section className="bg-gray-900" id="3d">
       <div
         style={{ backgroundColor: "#dfd6c7" }}
         className="p-10 md:py-32 md:px-4 rounded-t-[2rem] md:rounded-t-[5rem]"

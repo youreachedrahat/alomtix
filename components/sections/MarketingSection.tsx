@@ -3,7 +3,7 @@ import { BarChart3, Target, Megaphone, LineChart } from "lucide-react";
 
 export const MarketingSection = () => {
   return (
-    <section style={{ backgroundColor: "#dfd6c7" }}>
+    <section id="marketing" style={{ backgroundColor: "#dfd6c7" }}>
       <div className="bg-gray-900 p-10 md:py-32 md:px-4 rounded-t-[2rem] md:rounded-t-[5rem]">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">

@@ -38,6 +38,7 @@ export const ServicesSection = () => {
 
   return (
     <section
+      id="services"
       style={{ backgroundColor: "#dfd6c7" }}
       className="relative min-h-screen overflow-hidden"
     >

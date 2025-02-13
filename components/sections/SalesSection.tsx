@@ -3,7 +3,7 @@ import { Briefcase, TrendingUp, Users2, BadgeDollarSign } from "lucide-react";
 
 export const SalesSection = () => {
   return (
-    <section className="bg-gray-900">
+    <section id="sales" className="bg-gray-900">
       <div
         style={{ backgroundColor: "#dfd6c7" }}
         className="p-10 md:py-32 md:px-4 rounded-t-[2rem] md:rounded-t-[5rem]"

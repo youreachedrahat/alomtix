@@ -25,6 +25,7 @@ export const Navbar = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    console.log("id", sectionId);
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -56,6 +57,7 @@ export const Navbar = () => {
             <div className="hidden md:flex items-center space-x-8">
               <div className="relative group">
                 <button
+                  onClick={() => scrollToSection("services")}
                   className={`flex items-center space-x-1 transition-colors duration-300 ${
                     isScrolled
                       ? "text-gray-700 hover:text-gray-900"
@@ -63,7 +65,7 @@ export const Navbar = () => {
                   }`}
                 >
                   <span>Services</span>
-                  <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
+                  <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:-rotate-180" />
                 </button>
 
                 <div className="absolute right-0 mt-2 w-56 bg-white/90 backdrop-blur-lg rounded-xl shadow-[0_8px_32px_0_rgba(31,38,135,0.1)] border border-white/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">

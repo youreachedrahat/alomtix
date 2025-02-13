@@ -3,7 +3,7 @@ import { Scale, Shield, Users, Hourglass } from "lucide-react";
 
 export const LegalSection = () => {
   return (
-    <section className="bg-gray-50">
+    <section id="legal" className="bg-gray-50">
       <div className="bg-gray-900 p-10 md:py-32 md:px-4 rounded-t-[2rem] md:rounded-t-[5rem]">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
