@@ -2,20 +2,13 @@
 
 import {
   Aboutus,
-  BusinessConsultingSection,
   Contactus,
   HeroSection,
-  LegalSection,
-  MarketingSection,
-  SalesSection,
   ServicesSection,
   Testimonials,
-  ThreeDSection,
+  FlexibleSection,
 } from "@/components/sections";
-import { FlexibleSection } from "@/components/sections/servicesComponent";
 import { SERVICES } from "@/config/site";
-
-import { ShieldCheck, Rocket, Code } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -24,11 +17,11 @@ export default function HomePage() {
 
       <ServicesSection />
       <FlexibleSection {...SERVICES.legalSection} />
-      {/* <LegalSection /> */}
-      <ThreeDSection />
-      <MarketingSection />
-      <SalesSection />
-      <BusinessConsultingSection />
+      <FlexibleSection {...SERVICES.threeDSection} />
+      <FlexibleSection {...SERVICES.marketingSection} />
+      <FlexibleSection {...SERVICES.salesSection} />
+      <FlexibleSection {...SERVICES.businessConsultingSection} />
+
       <Aboutus />
       <Testimonials />
       <Contactus />

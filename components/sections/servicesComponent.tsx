@@ -9,10 +9,11 @@ interface FeatureCard {
 }
 interface FeatureImage {
   link: string;
+  alt: string;
   height: number;
   width: number;
 }
-interface FlexibleSectionProps {
+export interface FlexibleSectionProps {
   id: string;
   title: string;
   titleHighlight: string;
@@ -138,7 +139,7 @@ const ImageGrid: React.FC<{
         <div key={index} className={`${gridClasses[index] || ""}`}>
           <Image
             src={img.link || "/placeholder.svg"}
-            alt={`Image ${index + 1}`}
+            alt={img.alt}
             width={500}
             height={500}
             className="w-full h-full object-cover rounded-2xl"
