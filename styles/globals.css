@@ -41,7 +41,14 @@
   animation: reveal 1s ease-in forwards;
 }
 
-
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 
 @layer base {

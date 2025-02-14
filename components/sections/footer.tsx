@@ -1,11 +1,12 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 px-4">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="max-sm:col-span-2">
           <h3 className="text-xl font-bold text-white mb-4">Almotix</h3>
           <p className="text-sm">
             Transforming businesses through innovative solutions and expert
@@ -31,9 +32,10 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 text-9xl text-center text-gray-700 overflow-x-scroll">
-        ALMOTIX
-        {/* © {new Date().getFullYear()} Almotix. All rights reserved. */}
+      <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 overflow-hidden whitespace-nowrap">
+        <div className="inline-block animate-[marquee_10s_linear_infinite] text-9xl text-gray-700">
+          ALMOTIX&nbsp;&nbsp;&nbsp;ALMOTIX&nbsp;&nbsp;&nbsp;ALMOTIX&nbsp;&nbsp;&nbsp;ALMOTIX&nbsp;&nbsp;&nbsp;
+        </div>
       </div>
     </footer>
   );
