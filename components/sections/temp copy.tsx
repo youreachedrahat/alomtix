@@ -1,0 +1,126 @@
+"use client";
+import type React from "react";
+import type { LucideIcon } from "lucide-react";
+import { MasonryGrid } from "./masnory";
+// import { MasonryGrid } from "./masonry";
+
+interface FeatureCard {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+interface FeatureImage {
+  link: string;
+  height: number;
+  width: number;
+}
+
+interface FlexibleSectionProps {
+  id: string;
+  title: string;
+  titleHighlight: string;
+  subtitle: string;
+  images: FeatureImage[];
+  features: FeatureCard[];
+  primaryButtonText: string;
+  secondaryButtonText: string;
+  isReversed?: boolean;
+  isDarkBackground?: boolean;
+}
+
+export const FlexibleSection: React.FC<FlexibleSectionProps> = ({
+  id,
+  title,
+  titleHighlight,
+  subtitle,
+  images,
+  features,
+  primaryButtonText,
+  secondaryButtonText,
+  isReversed = false,
+  isDarkBackground = false,
+}) => {
+  const bgColor = isDarkBackground ? "bg-gray-900" : "bg-[#dfd6c7]";
+  const textColor = isDarkBackground ? "text-white" : "text-gray-900";
+  const highlightColor = isDarkBackground ? "#dfd6c7" : "#dfd6c7";
+  const cardBgColor = isDarkBackground
+    ? "bg-gray-800/50 hover:bg-gray-800"
+    : "bg-white hover:bg-gray-100";
+  const cardTextColor = isDarkBackground ? "text-white" : "text-gray-900";
+  const cardDescriptionColor = isDarkBackground
+    ? "text-gray-400"
+    : "text-gray-600";
+  const buttonBgColor = isDarkBackground ? "bg-white" : "bg-gray-900";
+  const buttonTextColor = isDarkBackground ? "text-gray-900" : "text-white";
+
+  return (
+    <section id={id} className={bgColor}>
+      <div
+        className={`${
+          isDarkBackground ? "bg-gray-900" : "bg-[#dfd6c7]"
+        } p-10 md:py-32 md:px-4 rounded-t-[2rem] md:rounded-t-[5rem]`}
+      >
+        <div className="max-w-7xl mx-auto">
+          <div
+            className={`grid lg:grid-cols-2 gap-16 items-center ${isReversed ? "lg:grid-flow-col-dense" : ""}`}
+          >
+            <div className={`space-y-8 ${isReversed ? "lg:col-start-2" : ""}`}>
+              <div>
+                <h2 className={`text-5xl font-bold ${textColor} mb-4`}>
+                  {title}{" "}
+                  <span style={{ color: highlightColor }}>
+                    {titleHighlight}
+                  </span>
+                </h2>
+                <p
+                  className={`text-xl ${isDarkBackground ? "text-gray-300" : "text-gray-700"} max-w-xl`}
+                >
+                  {subtitle}
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-6">
+                {features.map((feature, index) => (
+                  <div
+                    key={index}
+                    className={`p-6 rounded-2xl ${cardBgColor} transition-colors`}
+                  >
+                    <feature.icon
+                      className="w-8 h-8 mb-4"
+                      style={{ color: highlightColor }}
+                    />
+                    <h3
+                      className={`text-lg font-semibold ${cardTextColor} mb-2`}
+                    >
+                      {feature.title}
+                    </h3>
+                    <p className={`${cardDescriptionColor} text-sm`}>
+                      {feature.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 items-center">
+                <button
+                  className={`px-8 py-3 rounded-full ${buttonBgColor} ${buttonTextColor} font-semibold hover:opacity-90 transition-colors w-full sm:w-auto`}
+                >
+                  {primaryButtonText}
+                </button>
+                <button
+                  className={`px-8 py-3 rounded-full border-2 ${isDarkBackground ? "border-white text-white hover:bg-white/10" : "border-gray-900 text-gray-900 hover:bg-gray-100"} font-semibold transition-colors w-full sm:w-auto`}
+                >
+                  {secondaryButtonText}
+                </button>
+              </div>
+            </div>
+
+            <div className={`${isReversed ? "lg:col-start-1" : ""}`}>
+              <MasonryGrid images={images} className="h-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
