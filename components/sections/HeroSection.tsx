@@ -5,7 +5,7 @@ import Link from "next/link";
 export const HeroSection: React.FC = () => {
   return (
     <section
-      className="relative min-h-screen overflow-hidden"
+      className="relative min-h-screen overflow-hidden pt-16 md:pt-10"
       style={{ backgroundColor: "#dfd6c7" }}
     >
       {/* Background Pattern */}
