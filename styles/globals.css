@@ -34,20 +34,6 @@
   @apply relative flex flex-col items-center justify-center text-center;
 }
 
-.circular-reveal {
-  -webkit-mask: radial-gradient(
-    circle at var(--mouse-x) var(--mouse-y),
-    transparent 100%,
-    black 100%
-  );
-  mask: radial-gradient(
-    circle at var(--mouse-x) var(--mouse-y),
-    transparent 100%,
-    black 100%
-  );
-  animation: reveal 1s ease-in forwards;
-}
-
 @keyframes marquee {
   0% {
     transform: translateX(100%);

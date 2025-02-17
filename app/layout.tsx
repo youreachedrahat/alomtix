@@ -10,6 +10,8 @@ import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/sections/footer";
 import MouseFollower from "@/components/mouseFollower";
+import Loader from "./Loader";
+import CircularReveal from "./Loader";
 
 export const metadata: Metadata = {
   title: {
@@ -40,18 +42,16 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
-        {/* <Loader /> */}
-        {/* <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}> */}
+        <CircularReveal />
         <div className="relative flex flex-col h-screen">
           <Navbar />
           {children}
           <Footer />
         </div>
         <MouseFollower />
-        {/* </Providers> */}
       </body>
     </html>
   );

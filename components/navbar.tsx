@@ -132,11 +132,11 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
 
-      <NavbarMenu className="py-10">
+      <NavbarMenu className="py-10 bg-primary">
         <Link
           href="/"
           onClick={() => setIsMenuOpen(false)}
-          className="w-full px-4 py-2 text-gray-800 hover:bg-white/20 rounded-lg transition-colors duration-200"
+          className="text-sm w-full px-4 py-2 text-gray-800 hover:bg-white/20 rounded-lg transition-colors duration-200"
         >
           Home
         </Link>
@@ -173,7 +173,7 @@ export const Navbar = () => {
         <Link
           href="/contact"
           onClick={() => setIsMenuOpen(false)}
-          className="w-full px-4 py-2 text-gray-800 hover:bg-white/20 rounded-lg transition-colors duration-200"
+          className="text-sm w-full px-4 py-2 text-gray-800 hover:bg-white/20 rounded-lg transition-colors duration-200"
         >
           Contact Us
         </Link>
