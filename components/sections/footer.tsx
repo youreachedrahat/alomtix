@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import { motion } from "framer-motion";
 
 export function Footer() {
   return (
@@ -32,10 +32,29 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 overflow-hidden whitespace-nowrap">
-        <div className="inline-block animate-[marquee_10s_linear_infinite] text-9xl text-gray-700">
-          ALMOTIX&nbsp;&nbsp;&nbsp;ALMOTIX&nbsp;&nbsp;&nbsp;ALMOTIX&nbsp;&nbsp;&nbsp;ALMOTIX&nbsp;&nbsp;&nbsp;
-        </div>
+      <div className="w-full mx-auto mt-8 pt-8 border-t border-gray-800 overflow-hidden text-5xl text-gray-500">
+        <motion.div
+          animate={{ x: [0, -1000] }}
+          transition={{
+            repeat: Number.POSITIVE_INFINITY,
+            duration: 20,
+            ease: "linear",
+          }}
+          className="whitespace-nowrap"
+        >
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ALMOTIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </motion.div>
       </div>
     </footer>
   );

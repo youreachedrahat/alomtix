@@ -1,48 +1,51 @@
-import React from "react";
-import { TestimonialSection } from "./TestimonialSection";
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
-export const Testimonials = () => {
+const testimonials = [
+  {
+    name: "John Doe",
+    position: "CEO, TechCorp",
+    content:
+      "Almotix has been instrumental in our company's growth. Their innovative solutions have truly transformed our business.",
+  },
+  {
+    name: "Jane Smith",
+    position: "Marketing Director, InnovateCo",
+    content:
+      "The team at Almotix is exceptional. Their expertise and dedication have helped us achieve our marketing goals beyond expectations.",
+  },
+  {
+    name: "Mike Johnson",
+    position: "CTO, FutureTech",
+    content:
+      "Almotix's 3D solutions have revolutionized our product development process. We couldn't be happier with the results.",
+  },
+];
+
+export function Testimonials() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-gray-100">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-gray-900 ">
-            Why Choose Almotix?
+        <AnimateOnScroll animation="slideUp">
+          <h2 className="text-5xl font-bold mb-12 text-center text-gray-900">
+            What Our Clients Say
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="">
-              <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
-                alt="Team meeting"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            <div className="">
-              <div className="space-y-4">
-                {[
-                  "Expert team with proven track record",
-                  "Tailored solutions for your unique needs",
-                  "Innovative approaches to complex challenges",
-                  "Commitment to client success",
-                ].map((point, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div
-                      style={{ backgroundColor: "#dfd6c7" }}
-                      className="w-2 h-2 rounded-full"
-                    ></div>
-                    <p className="text-lg text-gray-700">{point}</p>
-                  </div>
-                ))}
+        </AnimateOnScroll>
+        <div className="grid md:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <AnimateOnScroll key={index} animation="fadeIn">
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <p className="text-gray-700 mb-4">{testimonial.content}</p>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-gray-600">{testimonial.position}</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </AnimateOnScroll>
+          ))}
         </div>
-
-        {/* Testimonials Marquee */}
-      </div>
-      <div className="">
-        <TestimonialSection />
       </div>
     </section>
   );
-};
+}
