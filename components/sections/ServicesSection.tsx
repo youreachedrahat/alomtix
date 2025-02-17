@@ -6,6 +6,7 @@ import {
   MessageSquare,
   Boxes,
 } from "lucide-react";
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
 export const ServicesSection = () => {
   const services = [
@@ -46,19 +47,25 @@ export const ServicesSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="">
             <h2 className="text-7xl md:text-9xl font-medium mb-16 text-gray-900 relative">
-              Our <br />
-              <span className="font-thin italic">&nbsp; Services</span>
+              <AnimateOnScroll animation="slideUp" duration={0.7}>
+                Our <br />
+              </AnimateOnScroll>
+              <AnimateOnScroll animation="slideUp" duration={1}>
+                <span className="font-thin italic">&nbsp; Services</span>
+              </AnimateOnScroll>
               <div className="absolute -right-20 top-0 w-40 h-40 bg-gray-900/5 rounded-full blur-3xl"></div>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
             {services.map((service, index) => (
-              <div
+              <AnimateOnScroll
                 key={index}
                 className={`service-card transition-all  border duration-700 ${
                   index === 4 ? "md:col-span-2" : ""
                 }`}
+                animation="fadeIn"
+                duration={1}
               >
                 <div className="main-content relative z-10">
                   <service.icon
@@ -76,7 +83,7 @@ export const ServicesSection = () => {
                     transform: `rotate(${index * 45}deg)`,
                   }}
                 ></div>
-              </div>
+              </AnimateOnScroll>
             ))}
           </div>
         </div>

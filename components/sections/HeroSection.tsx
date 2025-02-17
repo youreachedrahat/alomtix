@@ -1,6 +1,8 @@
+import Image from "next/image";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { AnimateOnScroll } from "../AnimateOnScroll";
 
 export const HeroSection: React.FC = () => {
   return (
@@ -23,37 +25,39 @@ export const HeroSection: React.FC = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-                <span className="block transform hover:translate-x-2 transition-transform duration-300">
-                  Transform
-                </span>
-                <span className="block transform hover:translate-x-2 transition-transform duration-300 delay-75">
-                  Your Business
-                </span>
-                <span
-                  className="block transform hover:translate-x-2 transition-transform duration-300 delay-150"
-                  style={{ color: "#fff" }}
-                >
-                  With Us
-                </span>
+                <AnimateOnScroll animation="slideUp">
+                  <span className="block transform ">Transform</span>
+                </AnimateOnScroll>
+                <AnimateOnScroll animation="slideUp" duration={0.8}>
+                  <span className="block transform ">Your Business</span>
+                </AnimateOnScroll>
+                <AnimateOnScroll animation="slideUp" duration={1}>
+                  <span className="block transform  " style={{ color: "#fff" }}>
+                    With Us
+                  </span>
+                </AnimateOnScroll>
               </h1>
-              <p className="text-xl text-gray-600 max-w-xl">
-                Join us today to embark on a path towards a more successful and
-                innovative future for your business.
-              </p>
+              <AnimateOnScroll animation="slideUp" duration={1.2}>
+                <p className="text-xl text-gray-600 max-w-xl">
+                  Join us today to embark on a path towards a more successful
+                  and innovative future for your business.
+                </p>
+              </AnimateOnScroll>
             </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white rounded-full text-lg font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group"
-              >
-                Get Started
-                <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <button className="px-8 py-4 border-2 border-gray-900 text-gray-900 rounded-full text-lg font-semibold hover:bg-gray-900 hover:text-white transition-all duration-300 transform hover:scale-105">
-                Learn More
-              </button>
-            </div>
+            <AnimateOnScroll animation="slideUp" duration={1.3}>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white rounded-full text-lg font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group"
+                >
+                  Get Started
+                  <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <button className="px-8 py-4 border-2 border-gray-900 text-gray-900 rounded-full text-lg font-semibold hover:bg-gray-900 hover:text-white transition-all duration-300 transform hover:scale-105">
+                  Learn More
+                </button>
+              </div>
+            </AnimateOnScroll>
           </div>
 
           {/* Right Column - Image Grid */}
@@ -64,27 +68,39 @@ export const HeroSection: React.FC = () => {
 
             {/* Image Grid */}
             <div className="grid grid-cols-12 grid-rows-6 gap-4 h-[600px]">
-              <div className="col-span-8 row-span-4 transform hover:scale-[1.02] transition-transform duration-500">
-                <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80"
-                  alt="Business Strategy"
-                  className="w-full h-full object-cover rounded-2xl shadow-lg"
-                />
-              </div>
-              <div className="col-span-4 row-span-6 transform hover:scale-[1.02] transition-transform duration-500">
-                <img
-                  src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80"
-                  alt="Business Team"
-                  className="w-full h-full object-cover rounded-2xl shadow-lg"
-                />
-              </div>
-              <div className="col-span-8 row-span-2 transform hover:scale-[1.02] transition-transform duration-500">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
-                  alt="Business Meeting"
-                  className="w-full h-full object-cover rounded-2xl shadow-lg"
-                />
-              </div>
+              <AnimateOnScroll className="col-span-8 row-span-4 ">
+                <div className="transform hover:scale-[1.02] transition-transform duration-500 w-full h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80"
+                    alt="Business Strategy"
+                    className="w-full h-full object-cover rounded-2xl shadow-lg"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll className="col-span-4 row-span-6 ">
+                <div className="transform hover:scale-[1.02] transition-transform duration-500 w-full h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80"
+                    alt="Business Team"
+                    className="w-full h-full object-cover rounded-2xl shadow-lg"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll className="col-span-8 row-span-2 ">
+                <div className="transform hover:scale-[1.02] transition-transform duration-500 w-full h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+                    alt="Business Meeting"
+                    className="w-full h-full object-cover rounded-2xl shadow-lg"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </AnimateOnScroll>
             </div>
 
             {/* Accent Circle */}

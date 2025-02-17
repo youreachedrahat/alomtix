@@ -5,11 +5,15 @@ import { useInView } from "react-intersection-observer";
 interface AnimateOnScrollProps {
   children: React.ReactNode;
   animation?: "fadeIn" | "slideUp" | "scaleUp";
+  className?: string;
+  duration?: number | null;
 }
 
 export const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
   children,
   animation = "fadeIn",
+  className = "",
+  duration = null,
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -26,7 +30,7 @@ export const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: duration || 0.6, ease: "easeOut" },
     },
   };
 
@@ -36,6 +40,7 @@ export const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={variants}
+      className={className}
     >
       {children}
     </motion.div>

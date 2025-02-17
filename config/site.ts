@@ -270,7 +270,7 @@ export const SERVICES = {
     ],
     primaryButtonText: "Boost Sales",
     secondaryButtonText: "Learn More",
-    isReversed: false,
+    isReversed: true,
     isDarkBackground: false,
   },
   businessConsultingSection: {

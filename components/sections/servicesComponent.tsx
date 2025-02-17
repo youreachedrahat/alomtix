@@ -1,6 +1,7 @@
 import type React from "react";
 import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
 interface FeatureCard {
   icon: LucideIcon;
@@ -42,7 +43,7 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
   const upBgColor = isDarkBackground ? "bg-[#dfd6c7]" : "bg-gray-900";
   const bgColor = isDarkBackground ? "bg-gray-900" : "bg-[#dfd6c7]";
   const textColor = isDarkBackground ? "text-white" : "text-gray-900";
-  const highlightColor = isDarkBackground ? "#dfd6c7" : "#dfd6c7";
+  const highlightColor = isDarkBackground ? "#dfd6c7" : "#fff";
   const cardBgColor = isDarkBackground
     ? "bg-gray-800/50 hover:bg-gray-800"
     : "bg-white hover:bg-gray-100";
@@ -65,59 +66,75 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
             className={`grid lg:grid-cols-2 gap-16 items-center ${isReversed ? "lg:grid-flow-col-dense" : ""}`}
           >
             <div className={`space-y-8 ${isReversed ? "lg:col-start-2" : ""}`}>
-              <div>
-                <h2 className={`text-5xl font-bold ${textColor} mb-4`}>
-                  {title}{" "}
-                  <span style={{ color: highlightColor }}>
-                    {titleHighlight}
-                  </span>
-                </h2>
-                <p
-                  className={`text-xl ${isDarkBackground ? "text-gray-300" : "text-gray-700"} max-w-xl`}
-                >
-                  {subtitle}
-                </p>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-6">
-                {features.map((feature, index) => (
-                  <div
-                    key={index}
-                    className={`p-6 rounded-2xl ${cardBgColor} transition-colors`}
-                  >
-                    <feature.icon
-                      className="w-8 h-8 mb-4"
-                      style={{ color: highlightColor }}
-                    />
-                    <h3
-                      className={`text-lg font-semibold ${cardTextColor} mb-2`}
+              <AnimateOnScroll animation="slideUp" className="space-y-8">
+                <div>
+                  <AnimateOnScroll animation="slideUp">
+                    <h2 className={`text-5xl font-bold ${textColor} mb-4`}>
+                      {title}{" "}
+                      <span style={{ color: highlightColor }}>
+                        {titleHighlight}
+                      </span>
+                    </h2>
+                  </AnimateOnScroll>
+                  <AnimateOnScroll animation="slideUp">
+                    <p
+                      className={`text-xl ${isDarkBackground ? "text-gray-300" : "text-gray-700"} max-w-xl`}
                     >
-                      {feature.title}
-                    </h3>
-                    <p className={`${cardDescriptionColor} text-sm`}>
-                      {feature.description}
+                      {subtitle}
                     </p>
-                  </div>
-                ))}
-              </div>
+                  </AnimateOnScroll>
+                </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 items-center">
-                <button
-                  className={`px-8 py-3 rounded-full ${buttonBgColor} ${buttonTextColor} font-semibold hover:opacity-90 transition-colors w-full sm:w-auto`}
-                >
-                  {primaryButtonText}
-                </button>
-                <button
-                  className={`px-8 py-3 rounded-full border-2 ${isDarkBackground ? "border-white text-white hover:bg-white/10" : "border-gray-900 text-gray-900 hover:bg-gray-100"} font-semibold transition-colors w-full sm:w-auto`}
-                >
-                  {secondaryButtonText}
-                </button>
-              </div>
-            </div>
+                <div>
+                  <AnimateOnScroll
+                    // key={index}
+                    animation="fadeIn"
+                    className="grid sm:grid-cols-2 gap-6"
+                  >
+                    {features.map((feature, index) => (
+                      <div
+                        key={index}
+                        className={`p-6 rounded-2xl ${cardBgColor} transition-colors`}
+                      >
+                        <feature.icon
+                          className="w-8 h-8 mb-4"
+                          style={{ color: highlightColor }}
+                        />
+                        <h3
+                          className={`text-lg font-semibold ${cardTextColor} mb-2`}
+                        >
+                          {feature.title}
+                        </h3>
+                        <p className={`${cardDescriptionColor} text-sm`}>
+                          {feature.description}
+                        </p>
+                      </div>
+                    ))}
+                  </AnimateOnScroll>
+                </div>
 
-            <div className={`${isReversed ? "lg:col-start-1" : ""}`}>
-              <ImageGrid images={images} isDarkBackground={isDarkBackground} />
+                <div className="flex flex-col sm:flex-row gap-4 items-center">
+                  <button
+                    className={`px-8 py-3 rounded-full ${buttonBgColor} ${buttonTextColor} font-semibold hover:opacity-90 transition-colors w-full sm:w-auto`}
+                  >
+                    {primaryButtonText}
+                  </button>
+                  <button
+                    className={`px-8 py-3 rounded-full border-2 ${isDarkBackground ? "border-white text-white hover:bg-white/10" : "border-gray-900 text-gray-900 hover:bg-gray-100"} font-semibold transition-colors w-full sm:w-auto`}
+                  >
+                    {secondaryButtonText}
+                  </button>
+                </div>
+              </AnimateOnScroll>
             </div>
+            <AnimateOnScroll animation="scaleUp">
+              <div className={`${isReversed ? "lg:col-start-1" : ""}`}>
+                <ImageGrid
+                  images={images}
+                  isDarkBackground={isDarkBackground}
+                />
+              </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </div>
