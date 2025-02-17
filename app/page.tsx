@@ -20,7 +20,7 @@ export default function HomePage() {
           <ServicesSection />
         </AnimateOnScroll>
       </div>
-      <div className="bg-bg-gray-50">
+      <div className="bg-gray-50">
         <AnimateOnScroll animation="slideUp" duration={1}>
           <FlexibleSection {...SERVICES.legalSection} />
         </AnimateOnScroll>

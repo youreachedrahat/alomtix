@@ -104,14 +104,16 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Accent Circle */}
-            <div
-              className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full border-[16px] border-gray-900/10 -z-10"
-              style={{
-                background:
-                  "linear-gradient(135deg, rgba(223, 214, 199, 0.2), rgba(223, 214, 199, 0.1))",
-                backdropFilter: "blur(10px)",
-              }}
-            ></div>
+            <AnimateOnScroll animation="scaleUp">
+              <div
+                className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full border-[16px] border-gray-900/10 -z-10"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(223, 214, 199, 0.2), rgba(223, 214, 199, 0.1))",
+                  backdropFilter: "blur(10px)",
+                }}
+              ></div>
+            </AnimateOnScroll>
           </div>
         </div>
       </div>

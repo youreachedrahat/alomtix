@@ -72,12 +72,12 @@ export const ServicesSection = () => {
                 </h3>
                 <p className="text-gray-600">{service.description}</p>
               </div>
-              <div
+              {/* <div
                 className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl"
                 style={{
                   transform: `rotate(${index * 45}deg)`,
                 }}
-              ></div>
+              ></div> */}
             </AnimateOnScroll>
           ))}
         </div>

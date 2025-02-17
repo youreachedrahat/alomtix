@@ -32,7 +32,7 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div className="w-full mx-auto mt-8 pt-8 border-t border-gray-800 overflow-hidden text-5xl text-gray-500">
+      <div className="w-full mx-auto mt-8 pb-3 pt-14 border-t border-gray-800 overflow-hidden text-5xl text-gray-500">
         <motion.div
           animate={{ x: [0, -1000] }}
           transition={{

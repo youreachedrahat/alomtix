@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import { Star } from "lucide-react";
+import { Marquee } from "../magicui/marquee";
 
 const testimonials = [
   {
@@ -59,10 +61,12 @@ const TestimonialCard = ({
 }) => (
   <div className="min-w-[300px] max-w-[300px] p-4 mx-3 bg-white rounded-2xl shadow-lg">
     <div className="flex items-center space-x-3 mb-3">
-      <img
+      <Image
         src={testimonial.image}
         alt={testimonial.name}
         className="w-10 h-10 rounded-full object-cover"
+        width={500}
+        height={500}
       />
       <div>
         <h4 className="font-semibold text-gray-900 text-sm">
@@ -81,34 +85,26 @@ const TestimonialCard = ({
         />
       ))}
     </div>
-    <p className="text-gray-700 text-sm line-clamp-4">{testimonial.content}</p>
+    <p className="text-gray-700 text-sm line-clamp-3">{testimonial.content}</p>
   </div>
 );
 
-export const TestimonialSection = () => {
-  return (
-    <div className="py-16 overflow-hidden">
-      <div className="space-y-6">
-        {/* First Row - Left to Right */}
-        <div
-          className="flex whitespace-nowrap hover:pause-animation"
-          style={{ animation: "scroll 30s linear infinite" }}
-        >
-          {[...testimonials, ...testimonials].map((testimonial, index) => (
-            <TestimonialCard key={index} testimonial={testimonial} />
-          ))}
-        </div>
+const firstRow = testimonials.slice(0, testimonials.length / 2);
+const secondRow = testimonials.slice(testimonials.length / 2);
 
-        {/* Second Row - Right to Left */}
-        <div
-          className="flex whitespace-nowrap hover:pause-animation"
-          style={{ animation: "scroll-reverse 25s linear infinite" }}
-        >
-          {[...testimonials, ...testimonials].map((testimonial, index) => (
-            <TestimonialCard key={index} testimonial={testimonial} />
-          ))}
-        </div>
-      </div>
+export function TestimonialMarquee() {
+  return (
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+      <Marquee pauseOnHover className="[--duration:20s]">
+        {firstRow.map((t, index) => (
+          <TestimonialCard key={index} testimonial={t} />
+        ))}
+      </Marquee>
+      <Marquee reverse pauseOnHover className="[--duration:20s]">
+        {secondRow.map((t, index) => (
+          <TestimonialCard key={index} testimonial={t} />
+        ))}
+      </Marquee>
     </div>
   );
-};
+}
