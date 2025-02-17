@@ -3,7 +3,6 @@ import {
   BarChart,
   BarChart3,
   Briefcase,
-  Code,
   Cuboid,
   Hourglass,
   Laptop,
@@ -12,10 +11,8 @@ import {
   LineChart,
   Megaphone,
   Puzzle,
-  Rocket,
   Scale,
   Shield,
-  ShieldCheck,
   Target,
   TrendingUp,
   Users,
@@ -43,25 +40,25 @@ export const SERVICES = {
       "Access world-class legal expertise tailored to your business needs, when you need it most.",
     images: [
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80",
         alt: "image",
         height: 192,
         width: 384,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?auto=format&fit=crop&q=80",
         alt: "image",
         height: 256,
         width: 384,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80",
         alt: "image",
         height: 256,
         width: 384,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80",
         alt: "image",
         height: 192,
         width: 384,
@@ -128,31 +125,31 @@ export const SERVICES = {
     secondaryButtonText: "View Portfolio",
     images: [
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80",
         alt: "3D Visualization main",
         width: 80,
         height: 80,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://unsplash.com/photos/a-living-room-with-a-television-and-a-table-qsA0ldj7MCM",
         alt: "3D Model",
         width: 150,
         height: 150,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1628744876497-eb30460be9f6?auto=format&fit=crop&q=80",
         alt: "3D Render",
         width: 150,
         height: 150,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1628745277484-a7e97dca2c6a?auto=format&fit=crop&q=80",
         alt: "3D Design",
         width: 150,
         height: 40,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1628745277459-2a1508b2b865?auto=format&fit=crop&q=80",
         alt: "3D Project",
         width: 150,
         height: 40,
@@ -168,19 +165,19 @@ export const SERVICES = {
     subtitle: "Leverage insights to optimize your campaigns and drive growth.",
     images: [
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
         alt: "Marketing Analytics",
         height: 200,
         width: 400,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80",
         alt: "Digital Marketing",
         height: 400,
         width: 400,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80",
         alt: "Growth Strategies",
         height: 600,
         width: 200,
@@ -222,7 +219,7 @@ export const SERVICES = {
       "Optimize your sales process and drive revenue growth with our comprehensive solutions.",
     images: [
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80",
         alt: "Sales Team",
         height: 600,
         width: 400,
@@ -234,13 +231,26 @@ export const SERVICES = {
         width: 400,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80",
         alt: "Sales Strategy",
         height: 200,
         width: 200,
       },
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+        alt: "Sales Strategy",
+        height: 200,
+        width: 200,
+      },
+      {
+        link: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+        alt: "Sales Strategy",
+        height: 200,
+        width: 200,
+      },
+
+      {
+        link: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80",
         alt: "Business Growth",
         height: 200,
         width: 200,
@@ -281,7 +291,7 @@ export const SERVICES = {
       "Transform your business with expert consulting and innovative strategies tailored to your goals.",
     images: [
       {
-        link: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+        link: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80",
         alt: "Business Consulting",
         height: 400,
         width: 600,

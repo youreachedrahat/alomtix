@@ -41,7 +41,7 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
     isDarkBackground,
   } = props;
   const upBgColor = isDarkBackground ? "bg-[#dfd6c7]" : "bg-gray-900";
-  const bgColor = isDarkBackground ? "bg-gray-900" : "bg-[#dfd6c7]";
+  const bgColor = !isDarkBackground ? "bg-gray-900" : "bg-[#dfd6c7]";
   const textColor = isDarkBackground ? "text-white" : "text-gray-900";
   const highlightColor = isDarkBackground ? "#dfd6c7" : "#fff";
   const cardBgColor = isDarkBackground
@@ -97,11 +97,10 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
                       className={`p-6 rounded-2xl ${cardBgColor} transition-colors`}
                     >
                       <feature.icon
-                        className="w-8 h-8 mb-4"
-                        style={{ color: highlightColor }}
+                        className={`w-8 h-8 mb-4 ${cardTextColor}`}
                       />
                       <h3
-                        className={`text-lg font-semibold ${cardTextColor} mb-2`}
+                        className={`text-lg font-semibold ${cardTextColor} mb-2 `}
                       >
                         {feature.title}
                       </h3>
