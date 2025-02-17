@@ -6,18 +6,20 @@ export const Aboutus = () => {
     <section id="about" className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <AnimateOnScroll animation="slideUp">
-          <h2 className="text-5xl font-bold mb-12 text-gray-900">About Us</h2>
+          <h2 className="text-5xl font-bold max-sm:mb-2 text-gray-900">
+            About Us
+          </h2>
         </AnimateOnScroll>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="text-base md:text-lg grid md:grid-cols-2 gap-12 items-center">
           <AnimateOnScroll animation="fadeIn">
             <div className="space-y-6">
-              <p className="text-lg text-gray-700">
+              <p className=" text-gray-700">
                 At Almotix, we&apos;re dedicated to transforming businesses
                 through innovative solutions and expert consulting. Our team of
                 professionals brings years of experience across multiple
                 industries.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className=" text-gray-700">
                 We believe in creating lasting partnerships with our clients,
                 understanding their unique challenges, and delivering tailored
                 solutions that drive real results.

@@ -50,7 +50,7 @@ export const Navbar = () => {
       isBordered
       isBlurred
       // className="fixed top-0 left-0 right-0 z-40 px-4 py-4"
-      className={`fixed top-0 left-0 right-0 z-40 px-4 py-1 mt-3 max-w-full md:max-w-5xl mx-auto rounded-2xl transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 px-4 py-1 mt-3 max-w-full max-sm:w-11/12 md:max-w-5xl mx-auto rounded-2xl transition-all duration-300 ${
         isScrolled
           ? "bg-white/10 backdrop-blur-md shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] border border-white/20"
           : "bg-white/5 backdrop-blur-sm"

@@ -10,12 +10,12 @@ export const Contactus = () => {
     >
       <div className="max-w-4xl mx-auto text-center">
         <AnimateOnScroll animation="slideUp">
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Ready to Transform Your Business?
           </h2>
         </AnimateOnScroll>
         <AnimateOnScroll animation="fadeIn">
-          <p className="text-xl text-gray-700 mb-8">
+          <p className="text-base md:text-xl text-gray-700 mb-8">
             Let&apos;s work together to achieve your goals
           </p>
           <Link

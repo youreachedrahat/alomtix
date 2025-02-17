@@ -7,7 +7,7 @@ export function Testimonials() {
       <div>
         <div className="max-w-6xl mx-auto">
           <AnimateOnScroll animation="slideUp">
-            <h2 className="text-5xl font-bold mb-12 text-center text-white">
+            <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-white">
               What Our Clients Say
             </h2>
           </AnimateOnScroll>

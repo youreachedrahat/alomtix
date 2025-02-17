@@ -38,15 +38,17 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <section className="p-10 md:py-32 md:px-4 bg-gray-50 rounded-t-[2rem] md:rounded-t-[5rem] overflow-hidden relative">
+    <section className="px-10 py-16 md:py-32 md:px-4 bg-gray-50 rounded-t-[2rem] md:rounded-t-[5rem] overflow-hidden relative">
       <div className="max-w-6xl mx-auto">
         <div className="">
           <h2 className="text-7xl md:text-9xl font-medium mb-16 text-gray-900 relative">
             <AnimateOnScroll animation="slideUp" duration={0.7}>
-              Our <br />
+              Our&nbsp;
             </AnimateOnScroll>
-            <AnimateOnScroll animation="slideUp" duration={1}>
-              <span className="font-thin italic">&nbsp; Services</span>
+            <AnimateOnScroll animation="slideUp" duration={1} className="">
+              <span className="block font-thin italic ">
+                {<span className="max-sm:hidden">&nbsp; </span>} Services
+              </span>
             </AnimateOnScroll>
             <div className="absolute -right-20 top-0 w-40 h-40 bg-gray-900/5 rounded-full blur-3xl"></div>
           </h2>

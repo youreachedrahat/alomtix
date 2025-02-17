@@ -59,7 +59,7 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
       id={id}
       className={`${
         isDarkBackground ? "bg-gray-900" : "bg-[#dfd6c7]"
-      } p-10 md:py-32 md:px-4 rounded-t-[2rem] md:rounded-t-[5rem]`}
+      } px-10 py-20 md:py-32 md:px-4 rounded-t-[2rem] md:rounded-t-[5rem]`}
     >
       <div className="max-w-7xl mx-auto">
         <div
@@ -78,7 +78,7 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
                 </AnimateOnScroll>
                 <AnimateOnScroll animation="slideUp">
                   <p
-                    className={`text-xl ${isDarkBackground ? "text-gray-300" : "text-gray-700"} max-w-xl`}
+                    className={`text-base md:text-xl ${isDarkBackground ? "text-gray-300" : "text-gray-700"} max-w-xl`}
                   >
                     {subtitle}
                   </p>
@@ -89,22 +89,24 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
                 <AnimateOnScroll
                   // key={index}
                   animation="fadeIn"
-                  className="grid sm:grid-cols-2 gap-6"
+                  className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6"
                 >
                   {features.map((feature, index) => (
                     <div
                       key={index}
-                      className={`p-6 rounded-2xl ${cardBgColor} transition-colors`}
+                      className={`p-4 sm:p-6 rounded-2xl ${cardBgColor} transition-colors`}
                     >
                       <feature.icon
-                        className={`w-8 h-8 mb-4 ${cardTextColor}`}
+                        className={`w-7 h-7 mb-3 sm:w-8 sm:h-8 sm:mb-4 ${cardTextColor}`}
                       />
                       <h3
-                        className={`text-lg font-semibold ${cardTextColor} mb-2 `}
+                        className={`text-base sm:text-lg font-semibold ${cardTextColor} mb-2 `}
                       >
                         {feature.title}
                       </h3>
-                      <p className={`${cardDescriptionColor} text-sm`}>
+                      <p
+                        className={`${cardDescriptionColor} text-xs sm:text-sm`}
+                      >
                         {feature.description}
                       </p>
                     </div>
@@ -146,7 +148,7 @@ const ImageGrid: React.FC<{
   const gridClasses = getGridClasses(images.length);
 
   return (
-    <div className={`grid grid-cols-6 gird-rows-6 gap-4 `}>
+    <div className={`grid grid-cols-6 gird-rows-6 gap-4`}>
       {images.map((img, index) => (
         <div key={index} className={`${gridClasses[index] || ""}`}>
           <Image

@@ -7,7 +7,7 @@ import { AnimateOnScroll } from "../AnimateOnScroll";
 export const HeroSection: React.FC = () => {
   return (
     <section
-      className="relative min-h-screen overflow-hidden pt-16 md:pt-10"
+      className="relative min-h-screen overflow-hidden pt-44 pb-16 lg:pt-12"
       style={{ backgroundColor: "#dfd6c7" }}
     >
       {/* Background Pattern */}
@@ -67,7 +67,7 @@ export const HeroSection: React.FC = () => {
             <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-gray-900/5 rounded-full blur-3xl"></div>
 
             {/* Image Grid */}
-            <div className="grid grid-cols-12 grid-rows-6 gap-4 h-[600px]">
+            <div className="grid grid-cols-12 grid-rows-6 gap-4 max-h-96 md:max-h-[600px]">
               <AnimateOnScroll className="col-span-8 row-span-4 ">
                 <div className="transform hover:scale-[1.02] transition-transform duration-500 w-full h-full">
                   <Image
