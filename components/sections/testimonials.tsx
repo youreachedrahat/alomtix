@@ -23,17 +23,17 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 px-4 bg-gray-100">
+    <section className="py-20 px-4 bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <AnimateOnScroll animation="slideUp">
-          <h2 className="text-5xl font-bold mb-12 text-center text-gray-900">
+          <h2 className="text-5xl font-bold mb-12 text-center text-white">
             What Our Clients Say
           </h2>
         </AnimateOnScroll>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <AnimateOnScroll key={index} animation="fadeIn">
-              <div className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-md shadow-white">
                 <p className="text-gray-700 mb-4">{testimonial.content}</p>
                 <div>
                   <p className="font-semibold text-gray-900">
