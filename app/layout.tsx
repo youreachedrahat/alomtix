@@ -9,7 +9,6 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/sections/footer";
-import Loader from "@/components/Loader";
 import MouseFollower from "@/components/mouseFollower";
 
 export const metadata: Metadata = {
@@ -41,7 +40,7 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         {/* <Loader /> */}

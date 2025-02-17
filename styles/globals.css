@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .service-card {
   @apply relative overflow-hidden rounded-3xl p-12 transition-all duration-500 ease-out;
   background: linear-gradient(
@@ -36,8 +35,16 @@
 }
 
 .circular-reveal {
-  -webkit-mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y), transparent 100%, black 100%);
-  mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y), transparent 100%, black 100%);
+  -webkit-mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent 100%,
+    black 100%
+  );
+  mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent 100%,
+    black 100%
+  );
   animation: reveal 1s ease-in forwards;
 }
 
@@ -49,7 +56,6 @@
     transform: translateX(-100%);
   }
 }
-
 
 @layer base {
   :root {
@@ -107,9 +113,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
-
-
 
 @layer base {
   * {

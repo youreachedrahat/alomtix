@@ -12,8 +12,8 @@ export const Aboutus = () => {
           <AnimateOnScroll animation="fadeIn">
             <div className="space-y-6">
               <p className="text-lg text-gray-700">
-                At Almotix, we're dedicated to transforming businesses through
-                innovative solutions and expert consulting. Our team of
+                At Almotix, we&apos;re dedicated to transforming businesses
+                through innovative solutions and expert consulting. Our team of
                 professionals brings years of experience across multiple
                 industries.
               </p>

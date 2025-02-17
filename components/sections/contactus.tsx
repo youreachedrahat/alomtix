@@ -16,7 +16,7 @@ export const Contactus = () => {
         </AnimateOnScroll>
         <AnimateOnScroll animation="fadeIn">
           <p className="text-xl text-gray-700 mb-8">
-            Let's work together to achieve your goals
+            Let&apos;s work together to achieve your goals
           </p>
           <Link
             href="/contact"
