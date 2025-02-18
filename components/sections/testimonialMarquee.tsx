@@ -59,7 +59,7 @@ const TestimonialCard = ({
 }: {
   testimonial: (typeof testimonials)[0];
 }) => (
-  <div className="min-w-[300px] max-w-[300px] p-4 mx-3 bg-white rounded-2xl shadow-lg">
+  <div className="w-[270px] sm:min-w-[300px] sm:max-w-[300px] p-4 mx-3 bg-white rounded-2xl shadow-lg">
     <div className="flex items-center space-x-3 mb-3">
       <Image
         src={testimonial.image}
@@ -85,7 +85,9 @@ const TestimonialCard = ({
         />
       ))}
     </div>
-    <p className="text-gray-700 text-sm line-clamp-3">{testimonial.content}</p>
+    <p className="text-gray-700 text-sm line-clamp-2 sm:line-clamp-3">
+      {testimonial.content}
+    </p>
   </div>
 );
 
@@ -94,7 +96,7 @@ const secondRow = testimonials.slice(testimonials.length / 2);
 
 export function TestimonialMarquee() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden p-0">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((t, index) => (
           <TestimonialCard key={index} testimonial={t} />

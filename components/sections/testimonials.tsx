@@ -3,7 +3,7 @@ import { TestimonialMarquee } from "./testimonialMarquee";
 
 export function Testimonials() {
   return (
-    <section className="py-20 px-4 bg-gray-900 w-full">
+    <section className="py-20 px-0 bg-gray-900 w-full">
       <div>
         <div className="max-w-6xl mx-auto">
           <AnimateOnScroll animation="slideUp">

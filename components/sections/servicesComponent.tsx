@@ -145,7 +145,10 @@ const ImageGrid: React.FC<{
   return (
     <div className={`grid grid-cols-6 gird-rows-6 gap-4`}>
       {images.map((img, index) => (
-        <div key={index} className={`${gridClasses[index] || ""}`}>
+        <div
+          key={index}
+          className={`${gridClasses[index] || ""} transform hover:scale-[1.02] transition-transform duration-500`}
+        >
           <Image
             src={img.link || "/placeholder.svg"}
             alt={img.alt}
