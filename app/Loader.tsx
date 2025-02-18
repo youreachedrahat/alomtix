@@ -10,7 +10,7 @@ const CircularReveal = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsRevealing(true);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -36,7 +36,7 @@ const CircularReveal = () => {
         <motion.div
           className="relative z-10"
           animate={isRevealing ? { opacity: 0 } : { opacity: 1 }}
-          transition={{ duration: 0.75, ease: "easeInOut" }}
+          transition={{ duration: 2, ease: "easeInOut" }}
         >
           <div className="w-20 h-20 border-4 border-gray-200 rounded-full animate-spin">
             <div className="absolute inset-0 rounded-full border-4 border-t-0 border-r-0 border-[#dfd6c7]"></div>

@@ -85,15 +85,10 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
                 </AnimateOnScroll>
               </div>
 
-              <div>
-                <AnimateOnScroll
-                  // key={index}
-                  animation="fadeIn"
-                  className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6"
-                >
-                  {features.map((feature, index) => (
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+                {features.map((feature, index) => (
+                  <AnimateOnScroll key={index} animation="fadeIn">
                     <div
-                      key={index}
                       className={`p-4 sm:p-6 rounded-2xl ${cardBgColor} transition-colors`}
                     >
                       <feature.icon
@@ -110,8 +105,8 @@ export const FlexibleSection: React.FC<FlexibleSectionProps> = (props) => {
                         {feature.description}
                       </p>
                     </div>
-                  ))}
-                </AnimateOnScroll>
+                  </AnimateOnScroll>
+                ))}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 items-center">
